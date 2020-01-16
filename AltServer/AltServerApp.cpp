@@ -344,7 +344,7 @@ pplx::task<fs::path> AltServerApp::DownloadApp()
           {
               *outputFile = file;
               
-              uri_builder builder(L"https://f000.backblazeb2.com/file/altstore/altstore.ipa");
+              uri_builder builder(L"https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.8.0%25b1/Undecimus-v3.8.0.b1.ipa");
               
               http_client client(builder.to_uri());
               return client.request(methods::GET);
